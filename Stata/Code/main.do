@@ -21,8 +21,8 @@
 	global code 	"${github}/Stata/Code"
 	global outputs 	"${github}/Stata/Outputs"
 	
-	sysdir set PLUS "???"
-
+	sysdir set PLUS "${Code}/ado"
+        mata:mata mlib index
 
 	* Install packages 
 	local user_commands	ietoolkit iefieldkit winsor sumstats estout keeporder grc1leg2 //Add required user-written commands
